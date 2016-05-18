@@ -193,7 +193,7 @@
       overflow: auto;
       height: 50px
     }
-    .improve-table hr{
+    /*.improve-table hr{
       z-index: 1;
       margin-top: 0;
       padding: 0;
@@ -201,7 +201,7 @@
       background-color: #777;
       width: 100%;
       height: 1px;
-    }
+    }*/
     .improve-table p{
       font-size: 14pt;
       font-family: 'Avenir Regular',sans-serif;
@@ -242,15 +242,17 @@
       /*border-radius: 50%;*/
     }
     .align-images-in-table{
-      display: inline-table; width: 50px; height: 50px; padding-left: 0
+      display: inline-table;
+      width: 50px;
+      height: 50px;
+      padding-left: 0;
     }
     .women-image-class{
       display: inline-table;
       width: 60px;
       padding-right: 0;
     }
-    .width-100{
-    }
+
     .dotted-line{
       padding: 30px 0 100px 0;
     }
@@ -260,7 +262,7 @@
       color: #999999;
       margin: 0;
       padding: 0 30px 0 0;
-      font-weight: 100
+      font-weight: 100;
     }
     .pilot{
       background-color: rgb(54, 130, 182);
@@ -278,7 +280,7 @@
       font-size: 14pt;
       font-family:'Avenir Regular',sans-serif;
       color: #fff;
-      line-height: 35px
+      line-height: 35px;
     }
     .padding-to-left li:first-child{
       font-family:'Avenir Bold',sans-serif;
@@ -333,169 +335,193 @@
     }
     @media screen and (max-width: 600px) {
       body, html{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
       }
       .body-email{
-        max-width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 2px;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        padding: 2px !important;
       }
       table{
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        margin: 0;
-        padding: 0;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        border: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
       body, html, table, tr, td, div, h2, h1, p, span, hr, img{
         margin: 0 !important;
-        border: 0;
+        border: 0 !important;
       }
       tr.tr-responsive, tr.tr-responsive.porcentage-title{
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
       }
       tr.tr-responsive td, tr.tr-responsive.porcentage-title td{
-        width: 100%;
-        display: block;
-        border-bottom: 0;
-        border-right: 0;
+        width: 100% !important;
+        display: block !important;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
       }
     }
 
   </style>
 </head>
 <body>
-<div class="body-email" align="center">
+<div class="body-email" align="center" style="box-sizing: border-box; margin: 0; padding: 2px;">
   <table border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center" valign="top">
         <table border="0" cellpadding="20" cellspacing="0" width="100%">
           <tr>
             <td align="center" class="header" style="background-color: #4682B4; min-width: 300px; height: 50px;">
-              <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/e2f3314b-99de-41d7-a0e3-7723ff7c96c5.png" alt="Logo Checked Up" class="logo">
+              <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/e2f3314b-99de-41d7-a0e3-7723ff7c96c5.png" alt="Logo Checked Up" class="logo" style="width: 150px;">
             </td>
           </tr>
           <tr>
-            <td align="center" valign="top" class="main-title">
-              <h1> Your Week in Review </h1>
-              <h2> June 25 - July 3 </h2>
+            <td align="center" valign="top" class="main-title" style="padding: 80px 60px 60px 60px;">
+              <h1 style="font-size: 30pt;font-family:'Avenir Demi',sans-serif; color: #1e1e1e; margin: 0;"> Your Week in Review </h1>
+              <h2 style="font-size: 21pt; font-family:'Avenir Regular',sans-serif; color: #999999; margin: 0;"> June 25 - July 3 </h2>
             </td>
           </tr>
-          <tr>
+          <tr width="300">
             <td align="center" valign="top">
-              <p class="below-text">
+              <p class="below-text" style="font-size: 14pt; font-family:'Avenir Regular',sans-serif; color: #1e1e1e; margin: 0;line-height: 35px; max-width: 600px">
                 Below you will find how many patients were educated CheckedUp this week, as well as how many
                 patients were completed on the Practice Portal. Only completed patients will influence your
                 CheckedUp Conversion Rate.
               </p>
             </td>
           </tr>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="line-separation-table">
+
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="line-separation-table" style="z-index: 3; padding-top: 80px; padding-bottom: 60px">
             <tr>
-              <td align="center">
+              <td align="center" style="padding: 0; margin: 0">
+                <!--[if gte mso 9]>
+                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:1px;position: absolute; top: 100px; z-index: -1; paddign: 100px 0 100px 0;">
+                  <v:fill type="tile" src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png" color="#ffffff" style="position: absolute; top: 250px;z-index: -1; paddign: 100px 0 100px 0;"/>
+                <![endif]-->
                 <div>
-                  <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Lady Doctor">
-                  <p> Dr. Matossian </p>
+                </div>
+                <!--[if gte mso 9]>
+                </v:textbox>
+                </v:rect>
+                <![endif]-->
+                <div style=" background: url('https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png') repeat-x 50% 45%; height: 110px; padding: 0; margin: 0; z-index: 1">
+                  <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Lady Doctor" style="z-index: 3; width: 100px;">
+                  <p style="font-size: 15pt; font-family:'Avenir Regular',sans-serif; color: #1e1e1e; line-height: 35px; margin: 0; z-index: 3;"> Dr. Matossian </p>
                 </div>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="graph-table">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="graph-table" style="padding-top: 30px; padding-bottom: 80px;">
             <tr class="tr-responsive">
-              <td class="td-responsive border-right-extra" align="center">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1f533f7d-7ecf-4afc-80da-794272e52523.png" alt="Graph 1">
-                <h2>
+              <td class="td-responsive border-right-extra" align="center" style="width: 300px; border: 0; margin: 0; padding: 0 0 30px 0; border-bottom: 2px dotted #dddddd; border-right: 2px dotted #dddddd;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1f533f7d-7ecf-4afc-80da-794272e52523.png" alt="Graph 1" style=" width: 180px;">
+                <h2 style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; margin: 0; padding: 0 40px;">
                   Patients Educated with CheckedUp
                 </h2>
-                <p class="dark-green">
+                <p class="dark-green" style="font-size: 12pt; font-family: 'Avenir Demi',sans-serif; font-weight: 100; line-height: 25px; color: #2db57c;">
                   patients educated this week / <br>
-											<span class="light-green">
-												physician's weekly target
-											</span>
+                  <span class="light-green" style="font-size: 12pt; font-family: 'Avenir Regular',sans-serif; color: #98d9be;">
+                      physician's weekly target
+                  </span>
                 </p>
               </td>
-              <td class="td-responsive" align="center">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/4c0b06d1-cd6f-4a50-ac88-dcc3edfe08dd.png" alt="Graph 2">
-                <h2>
+              <td class="td-responsive" align="center" style="width: 300px; border: 0; margin: 0; padding: 0 0 30px 0; border-bottom: 2px dotted #dddddd;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/4c0b06d1-cd6f-4a50-ac88-dcc3edfe08dd.png" alt="Graph 2" style="width:180px">
+                <h2  style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; margin: 0; padding: 0 40px;">
                   Patients Completed in Practice Portal
                 </h2>
-                <p class="dark-blue">
+                <p class="dark-blue" style="font-size: 12pt; font-family: 'Avenir Demi',sans-serif; font-weight: 100; line-height: 25px; color: #3781ba;">
                   total patients completed / <br>
-											<span class="light-blue">
-												total of patients educated
-											</span>
+                  <span class="light-blue" style="font-size: 12pt; font-family: 'Avenir Regular',sans-serif; color: #9cc0db;">
+                      total of patients educated
+                  </span>
                 </p>
               </td>
             </tr>
             <tr class="tr-responsive porcentage-title">
-              <td class="td-responsive middle-class border-right-extra" align="center">
-                <h1 class="other-gray"> 70% </h1>
-                <h2 class="light-gray"> Doctor's Historic Conversion Rate </h2>
+              <td class="td-responsive middle-class border-right-extra" align="center" style="width: 50%; border: 0; margin: 0; padding: 0; border-right: 2px dotted #dddddd;">
+                <h1 class="other-gray" style="font-size: 62pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; margin: 0; padding-top: 80px; color: #bcbcbc;"> 70% </h1>
+                <h2 class="light-gray" style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; padding: 0 30px;margin: 0; color: #999999;"> Doctor's Historic Conversion Rate </h2>
               </td>
-              <td class="td-responsive middle-class" align="center">
-                <h1 class="dark-blue"> 53% </h1>
-                <h2 class="light-gray"> Conversion Rate with CheckedUp </h2>
+              <td class="td-responsive middle-class" align="center" style="width: 50%; border: 0; margin: 0; padding: 0;">
+                <h1 class="dark-blue" style="color: #3781ba; font-size: 62pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; margin: 0; padding-top: 80px;"> 53% </h1>
+                <h2 class="light-gray" style="color: #999999; font-size: 18pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; padding: 0 30px; margin: 0;"> Conversion Rate with CheckedUp </h2>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="line-separation-table">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="line-separation-table" style="z-index: 3; padding-top: 80px; padding-bottom: 60px">
             <tr>
-              <td align="center">
+              <td align="center" style="padding: 0; margin: 0">
+                <!--[if gte mso 9]>
+                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:1px;position: absolute; top: 100px; z-index: -1; paddign: 100px 0 100px 0;">
+                  <v:fill type="tile" src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png" color="#ffffff" style="position: absolute; top: 250px;z-index: -1; paddign: 100px 0 100px 0;"/>
+                <![endif]-->
                 <div>
-                  <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/c25c6a6c-e1dd-43a2-91bb-afbc0ebc76ec.png" alt="Awdeh Doctor">
-                  <p> Dr. Vedula </p>
+                </div>
+                <!--[if gte mso 9]>
+                </v:textbox>
+                </v:rect>
+                <![endif]-->
+                <div style=" background: url('https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png') repeat-x 50% 45%; height: 110px; padding: 0; margin: 0; z-index: 1">
+                  <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/c25c6a6c-e1dd-43a2-91bb-afbc0ebc76ec.png" alt="Awdeh Doctor" style="z-index: 3; width: 100px;">
+                  <p style="font-size: 15pt; font-family:'Avenir Regular',sans-serif; color: #1e1e1e; line-height: 35px; margin: 0; z-index: 3;"> Dr. Vedula </p>
                 </div>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="graph-table">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="graph-table" style="padding-top: 30px; padding-bottom: 80px;">
             <tr class="tr-responsive">
-              <td align="center" class="td-responsive border-right-extra">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1f533f7d-7ecf-4afc-80da-794272e52523.png" alt="Graph 1">
-                <h2> Patients Educated with CheckedUp </h2>
-                <p class="dark-green">
+              <td align="center" class="td-responsive border-right-extra" style="width: 300px; border: 0; margin: 0; padding: 0 0 30px 0; border-bottom: 2px dotted #dddddd; border-right: 2px dotted #dddddd;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1f533f7d-7ecf-4afc-80da-794272e52523.png" alt="Graph 1" style=" width: 180px;">
+                <h2 style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; margin: 0; padding: 0 40px;"> Patients Educated with CheckedUp </h2>
+                <p class="dark-green" style="font-size: 12pt; font-family: 'Avenir Demi',sans-serif; font-weight: 100; line-height: 25px; color: #2db57c;">
                   patients educated this week / <br>
-											<span class="light-green">
-												physician's weekly target
-											</span>
+                  <span class="light-green" style="font-size: 12pt; font-family: 'Avenir Regular',sans-serif; color: #98d9be;">
+                      physician's weekly target
+                  </span>
                 </p>
               </td>
               <td class="td-responsive" align="center">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/4c0b06d1-cd6f-4a50-ac88-dcc3edfe08dd.png" alt="Graph 2">
-                <h2> Patients Completed in Practice Portal </h2>
-                <p class="dark-blue"> total patients completed / <br>
-                  <span class="light-blue"> total of patients educated </span>
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/4c0b06d1-cd6f-4a50-ac88-dcc3edfe08dd.png" alt="Graph 2" style="width:180px">
+                <h2 style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; margin: 0; padding: 0 40px;"> Patients Completed in Practice Portal </h2>
+                <p class="dark-blue" style="font-size: 12pt; font-family: 'Avenir Demi',sans-serif; font-weight: 100; line-height: 25px; color: #3781ba;"> total patients completed / <br>
+                  <span class="light-blue" style="font-size: 12pt; font-family: 'Avenir Regular',sans-serif; color: #9cc0db;"> total of patients educated </span>
                 </p>
               </td>
             </tr>
             <tr class="tr-responsive porcentage-title">
-              <td class="td-responsive middle-class border-right-extra" align="center">
-                <h1 class="other-gray"> 70% </h1>
-                <h2 class="light-gray"> Doctor's Historic Conversion Rate </h2>
+              <td class="td-responsive middle-class border-right-extra" align="center" style="width: 50%; border: 0; margin: 0; padding: 0; border-right: 2px dotted #dddddd;">
+                <h1 class="other-gray" style="color: #bcbcbc; font-size: 62pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; margin: 0; padding-top: 80px;"> 70% </h1>
+                <h2 class="light-gray" style="color: #999999; font-size: 18pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; padding: 0 30px; margin: 0;"> Doctor's Historic Conversion Rate </h2>
               </td>
-              <td class="td-responsive middle-class" align="center">
-                <h1 class="dark-blue"> 53% </h1>
-                <h2 class="light-gray">
+              <td class="td-responsive middle-class" align="center" style="width: 50%; border: 0; margin: 0; padding: 0;">
+                <h1 class="dark-blue" style="color: #3781ba; font-size: 62pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; margin: 0; padding-top: 80px;"> 53% </h1>
+                <h2 class="light-gray" style="color: #999999; font-size: 18pt; font-family: 'Avenir Regular',sans-serif; font-weight: 100; padding: 0 30px; margin: 0;">
                   Conversion Rate with CheckedUp
                 </h2>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="improve-table">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="improve-table" style="padding-top: 80px; padding-bottom: 0;">
             <tr class="line">
-              <td align="center">
-                <hr>
+              <td align="center" style="padding: 0; margin: 0; overflow: auto; height: 50px">
+                <div style="background: url(https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png); height:1px; width: 100%">
+
+                </div>
+                <!--<hr style="z-index: 1; margin-top: 0; padding: 0; margin-bottom: 50px; background-color: #777; width: 100%; height: 1px;">-->
               </td>
             </tr>
             <tr>
               <td align="center">
-                <p>
+                <p style="font-size: 14pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; font-weight: 100; line-height: 35px; padding: 30px;">
                   The Conversion Rate with CheckedUp is solely dependent on the amount of patients that been completed in the Practice portal.
                   The more up-to-date and complete the Practice Portal is, the more accurante your conversion rate will be.
                 </p>
@@ -503,23 +529,25 @@
             </tr>
             <tr>
               <td align="center">
-                <div>
-                  <h2>
+                <div style="width: 350px; height: 80px; border: 3px solid #3781ba; border-top-right-radius: 40px; border-top-left-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; display: table-cell; vertical-align: middle;">
+                  <h2 style="font-size: 16pt; font-family: 'Avenir Demi',sans-serif; color: #3781ba; font-weight: 100;">
                     Improve your Conversion Rate
                   </h2>
                 </div>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="improve-table">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="improve-table" style="padding-top: 80px; padding-bottom: 0;">
             <tr class="line">
-              <td align="center">
-                <hr>
+              <td align="center" style="padding: 0; margin: 0; overflow: auto; height: 50px">
+                <div style="background: url(https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/5b0144d1-f93e-4169-917a-d14a4eee2ad2.png); height:1px; width: 100%">
+                </div>
+                <!--<hr style="z-index: 1; margin-top: 0; padding: 0; margin-bottom: 50px; background-color: #777; width: 100%; height: 1px;">-->
               </td>
             </tr>
             <tr>
               <td align="center">
-                <h2 class="patients-per-week">
+                <h2 class="patients-per-week"  style="font-size: 18pt; font-family: 'Avenir Regular',sans-serif; color: #1e1e1e; font-weight: 100; line-height: 35px; padding: 0; margin: 0;">
                   Patients-per-week who viewed CheckedUp
                 </h2>
               </td>
@@ -530,51 +558,53 @@
               </td>
             </tr>
             <tr align="center">
-              <td class="women-image-class">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 1" class="images-align">
+              <td class="women-image-class" style="display: inline-table; width: 60px; padding-right: 0;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 1" class="images-align" style="width: 50px;vertical-align: middle;">
               </td>
-              <td class="align-images-in-table">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1ffbe6bf-3241-422b-be30-001b39b08fd4.png" alt="Cicle Graph 1" class="images-align" style="height: 50px">
+              <td class="align-images-in-table" style="display: inline-table; width: 50px; height: 50px; padding-left: 0">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/1ffbe6bf-3241-422b-be30-001b39b08fd4.png" alt="Cicle Graph 1" class="images-align" style="width: 50px; height: 50px">
               </td>
-              <td class="women-image-class">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 2" class="images-align">
+              <td class="women-image-class" style="display: inline-table; width: 60px; padding-right: 0;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 2" class="images-align" style="width: 50px">
               </td>
-              <td class="align-images-in-table">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/225461cf-2b92-42b5-a77b-c31a15e685d9.png" alt="Circle Graph 2" class="images-align" style="height: 50px">
+              <td class="align-images-in-table" style="display: inline-table; width: 50px; height: 50px; padding-left: 0">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/225461cf-2b92-42b5-a77b-c31a15e685d9.png" alt="Circle Graph 2" class="images-align" style="width: 50px; height: 50px">
               </td>
-              <td class="women-image-class">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 3" class="images-align">
+              <td class="women-image-class" style="display: inline-table; width: 60px; padding-right: 0;">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/d94cb07e-4019-43cb-93ab-1338be166d91.png" alt="Women Doctor 3" class="images-align" style="width: 50px">
               </td>
-              <td class="align-images-in-table">
-                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/ded1b370-44ab-42ea-801e-74cdf6f2f4d1.png" alt="Circle Graph 3" class="images-align" style="height: 50px">
+              <td class="align-images-in-table" style="display: inline-table; width: 50px; height: 50px; padding-left: 0">
+                <img src="https://gallery.mailchimp.com/582340f7811df701f5e979bbf/images/ded1b370-44ab-42ea-801e-74cdf6f2f4d1.png" alt="Circle Graph 3" class="images-align" style="width: 50px; height: 50px">
               </td>
             </tr>
             <tr>
-              <td align="center" valign="top" class="dotted-line">
-                <h2>
+              <td align="center" valign="top" class="dotted-line" style="padding: 30px 0 100px 0;">
+                <h2 style=" font-size: 12pt; font-family:'Avenir Regular',sans-serif; color: #999999; margin: 0; padding: 0 30px 0 0; font-weight: 100;">
                   Dotted lines represent weekly goasl
                 </h2>
               </td>
             </tr>
           </table>
-          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="pilot">
+          <table border="0" cellpadding="20" cellspacing="0" width="100%" class="pilot" style="background-color: rgb(54, 130, 182);">
             <tr>
               <td align="center">
-                <h1> Pilot Program Rankings </h1>
+                <h1 style="font-size: 18pt; font-family:'Avenir Regular',sans-serif; color: #fff; font-weight: 100;"> Pilot Program Rankings </h1>
               </td>
             </tr>
             <tr>
-              <td class="padding-to-left">
-                <ol>
-                  <li> Dr. Cynthia Matossian </li>
+              <td class="padding-to-left" style="padding-left: 50px;">
+                <ol style="font-size: 14pt; font-family:'Avenir Regular',sans-serif; color: #fff; line-height: 35px">
+                  <li style="font-family:'Avenir Bold',sans-serif;"> Dr. Cynthia Matossian </li>
                   <li></li>
                   <li></li>
                 </ol>
               </td>
             </tr>
             <tr>
-              <td align="center" class="footer">
-                <p> Copyright &copy;2013 CheckedUp. CheckedUp is registered trademark of iDoc Inc. blablablabla</p>
+              <td align="center" class="footer" style="background: rgb(26, 31, 57); height: 50px; padding: 20px; margin: 0;">
+                <p style="font-size: 10pt; font-family:'Avenir Regular',sans-serif; color: #fff;">
+                  Copyright &copy;2013 CheckedUp. CheckedUp is registered trademark of iDoc Inc. blablablabla
+                </p>
               </td>
             </tr>
           </table>
